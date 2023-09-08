@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ButtonPruebaGratuitaYellow } from "@/public/Buttons/ButtonPruebaGratuitaYellow";

@@ -1,6 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import {FC} from 'react';
-
-import Image from 'next/image';
 
 import { Box, Typography } from '@mui/material';
 import { ButtonVerPlanesPremium } from '../../public/Buttons/ButtonVerPlanesPremium';

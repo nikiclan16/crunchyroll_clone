@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Box, Typography, useMediaQuery } from '@mui/material'
 import Link from 'next/link'
 import React, { FC } from 'react'

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React,{FC, useRef}  from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -71,7 +72,7 @@ export const Slider:FC<sliderProps> = ({sliderImages}) => {
                             <SwiperSlide key={data.title}>
                                     <Box className={styles["slider__section"]}>
                                         <Link href={data.url} target='_blank' rel='noopener noreferrer'>
-                                            <img className={styles["slider__img"]} src={image} />
+                                            <img className={styles["slider__img"]} src={image} alt={data.url}/>
                                         </Link>
                                     </Box>
                             </SwiperSlide>

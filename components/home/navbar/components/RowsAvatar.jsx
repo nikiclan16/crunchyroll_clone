@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Avatar, Box, Typography } from '@mui/material';
 import React from 'react';
 import styles from "../../../../styles/home.module.css";
