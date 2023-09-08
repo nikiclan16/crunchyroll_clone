@@ -1,5 +1,4 @@
 import { Avatar, Box, Typography } from '@mui/material';
-import Image from 'next/image';
 import React from 'react';
 import styles from "../../../../styles/home.module.css";
 
@@ -21,7 +20,7 @@ export const RowsAvatar = ({ title, RowsAvatarProps, selectedAvatar, handleAvata
                 '&:hover': selectedAvatar === data.src ? {} : { border: '4px solid #fff' },
               }}
             >
-              <Image className={styles["image-responsive"]} width={100} height={100} src={data.src} alt={data.alt} />
+              <img className={styles["image-responsive"]} width={100} height={100} src={data.src} alt={data.alt} />
             </Avatar>
           ))}
         </Box>
