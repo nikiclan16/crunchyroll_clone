@@ -1,0 +1,32 @@
+
+  
+  
+  /* register - login */
+  .container-forms-auth {
+    margin-top:64px;
+    margin-bottom:48px;
+    padding:46px 0px;
+    width: 400px;
+  }
+  /* fin register - login */
+  
+  
+  
+  @media (max-width: 567px) {
+
+  /* register - login */
+  .container-forms-auth {
+    margin-top:64px;
+    margin-bottom:48px;
+    padding:0px 0px;
+    width: 93vw;
+  }
+  
+  .button-auth {
+    width: 100%;
+  }
+  /* fin register - login */
+  
+  
+  }
+  

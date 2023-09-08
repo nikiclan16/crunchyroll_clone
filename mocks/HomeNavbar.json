@@ -1,0 +1,163 @@
+{
+    "leftDrawer": [
+        {
+            "url": "https://www.crunchyroll.com/es/videos/popular",
+            "text": "Popular"
+        },
+        {
+            "url": "https://www.crunchyroll.com/es/videos/new",
+            "text": "Novedades"
+        },
+        {
+            "url": "https://www.crunchyroll.com/es/videos/alphabetical",
+            "text": "Alfabético"
+        },
+        {
+            "url": "https://www.crunchyroll.com/es/simulcasts/seasons/summer-2023",
+            "text": "Temporada de simulcast"
+        },
+        {
+            "url": "https://www.crunchyroll.com/es/simulcastcalendar",
+            "text": "Calendario de lanzamientos"
+        },
+        {
+            "url": "https://www.crunchyroll.com/es/music",
+            "text": "Videos musicales y conciertos"
+        }
+    ],
+    "Avatars": {
+        "Crunchyroll": [
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/0001-cr-white-orange.png",
+                "alt":"crunchyroll1"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/0002-cr-orange-white.png",
+                "alt":"crunchyroll2"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/0003-cr-white-gradient1.png",
+                "alt":"crunchyroll3"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/0004-cr-white-gradient2.png",
+                "alt":"crunchyroll4"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/0005-cr-white-gradient3.png",
+                "alt":"crunchyroll5"
+            }
+        ],
+
+        "ChainsawMan": [
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/chainsawman-pochita.png",
+                "alt":"chainsawman1"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/chainsawman-denji.png",
+                "alt":"chainsawman2"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/chainsawman-aki.png",
+                "alt":"chainsawman3"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/chainsawman-power.png",
+                "alt":"chainsawman4"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/chainsawman-makima.png",
+                "alt":"chainsawman5"
+            }
+        ],
+        "OnePiece": [
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/one-piece-luffy-4.png",
+                "alt":"onepiece1"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/one-piece-roronoa-zoro-1.png",
+                "alt":"onepiece2"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/one-piece-sanji-1.png",
+                "alt":"onepiece3"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/one-piece-chopper-3.png",
+                "alt":"onepiece4"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/one-piece-usopp-1.png",
+                "alt":"onepiece5"
+            }
+        ],
+        "JujutsuKaisen": [
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1041-jujutsu-kaisen-yuji-itadori.png",
+                "alt":"jujutsukaisen1"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1042-jujutsu-kaisen-megumi-fushigoro.png",
+                "alt":"jujutsukaisen2"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1043-jujutsu-kaisen-nobara-kugisaki.png",
+                "alt":"jujutsukaisen3"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1044-jujutsu-kaisen-satoru-gojo.png",
+                "alt":"jujutsukaisen4"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1045-jujutsu-kaisen-ryomen-sukuna.png",
+                "alt":"jujutsukaisen5"
+            }
+        ],
+        "BlackClover": [
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1056-black-clover-asta.png",
+                "alt":"blackclover1"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1057-black-clover-yuno.png",
+                "alt":"blackclover2"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1058-black-clover-noelle.png",
+                "alt":"blackclover3"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1059-black-clover-yami.png",
+                "alt":"blackclover4"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1060-black-clover-nero.png",
+                "alt":"blackclover5"
+            }
+        ],
+        "TokyoRevengers": [
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1040-tokyo-revengers-baji.png",
+                "alt":"tokyorevengers1"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1039-tokyo-revengers-mitsuya.png",
+                "alt":"tokyorevengers2"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1038-tokyo-revengers-draken.png",
+                "alt":"tokyorevengers3"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1037-tokyo-revengers-mikey.png",
+                "alt":"tokyorevengers4"
+            },
+            {
+                "src":"https://static.crunchyroll.com/assets/avatar/170x170/1036-tokyo-revengers-takemichi.png",
+                "alt":"tokyorevengers5"
+            }
+        ]
+    }
+}

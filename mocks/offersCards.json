@@ -1,0 +1,37 @@
+{
+    "offers" : [
+        {
+            "fan":"FAN",
+            "bestOffer": false,
+            "price":"11.900,00 COP/mes",
+            "withoutAds":true,
+            "accessUnlimited":true,
+            "newEpisodes":true,
+            "fourDevices":true,
+            "withoutConnection":false,
+            "discount":false
+        },
+        {
+            "fan":"MEGA FAN (1-Mes)",
+            "bestOffer": true,
+            "price":"14.900,00 COP/mes",
+            "withoutAds":true,
+            "accessUnlimited":true,
+            "newEpisodes":true,
+            "fourDevices":true,
+            "withoutConnection":true,
+            "discount":false
+        },
+        {
+            "fan":"MEGA FAN (12-Meses)",
+            "bestOffer": false,
+            "price":"149.000,00 COP/año",
+            "withoutAds":true,
+            "accessUnlimited":true,
+            "newEpisodes":true,
+            "fourDevices":true,
+            "withoutConnection":true,
+            "discount":true
+        }
+    ]
+}

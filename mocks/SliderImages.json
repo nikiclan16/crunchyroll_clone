@@ -1,0 +1,41 @@
+
+{
+    "sliderImages": [
+        {
+            "title":"jujutsu-kaisen",
+            "url":"https://www.crunchyroll.com/es/watch/G4VUQ858V/shibuya-incident?utm_source=cap_cr&utm_medium=carousel_2&utm_campaign=jujutsu-kaisen_la&referrer=cap_cr_carousel_2_jujutsu-kaisen_la",
+            "img1":"https://static.crunchyroll.com/fms/landscape_poster/960x540/dbc5bbe1-7833-4187-9de7-850b000e9b69.png",
+            "img2":"https://static.crunchyroll.com/fms/portrait_poster/426x639/f8dce4cf-2d89-4430-8588-cc0b5e114232.png"
+        },
+        {
+            "title":"one-piece",
+            "url":"https://www.crunchyroll.com/es/series/GRMG8ZQZR/one-piece?utm_source=cap_cr&utm_medium=carousel_2&utm_campaign=one-piece_la&referrer=cap_cr_carousel_2_one-piece_la_230831",
+            "img1":"https://static.crunchyroll.com/fms/landscape_poster/960x540/d1fb67e5-7369-4b65-a364-3e75e2e3934c.png",
+            "img2":"https://static.crunchyroll.com/fms/portrait_poster/426x639/c2aa7758-2f6c-408b-8ed3-a92695e0f718.png"
+        },
+        {
+            "title":"reborn as a vending machine",
+            "url":"https://www.crunchyroll.com/es/series/GVDHX8504/reborn-as-a-vending-machine-i-now-wander-the-dungeon?utm_source=cap_cr&utm_medium=carousel_2&utm_campaign=vending-machine_la&referrer=cap_cr_carousel_2_vending-machine_la_230830",
+            "img1":"https://static.crunchyroll.com/fms/landscape_poster/960x540/a08c8545-8437-43ad-a901-310381172494.png",
+            "img2":"https://static.crunchyroll.com/fms/portrait_poster/426x639/8a5dbbd6-e382-4661-9932-72089b483433.png"
+        },
+        {
+            "title":"The Devil is a Part-Timer!",
+            "url":"https://www.crunchyroll.com/es/series/GR75Z5KKY/the-devil-is-a-part-timer?utm_source=cap_cr&utm_medium=carousel_2&utm_campaign=devil-part-timer_la&referrer=cap_cr_carousel_2_devil-part-timer_la_230831",
+            "img1":"https://static.crunchyroll.com/fms/landscape_poster/960x540/dc55be76-6895-4ede-af7a-f4613702547d.png",
+            "img2":"https://static.crunchyroll.com/fms/portrait_poster/426x639/8afc3f0d-83be-4528-8dfc-f3314d4d870d.png"
+        },
+        {
+            "title":"Santa Cecilia y el Pastor Lawrence",
+            "url":"https://www.crunchyroll.com/es/series/GKEH2G0G9/saint-cecilia-and-pastor-lawrence?utm_source=cap_cr&utm_medium=carousel_2&utm_campaign=saint-cecilia_la&referrer=cap_cr_carousel_2_saint-cecilia_la_230830",
+            "img1":"https://static.crunchyroll.com/fms/landscape_poster/960x540/de2431ba-6fe9-40b3-aa79-c84263cf83ef.png",
+            "img2":"https://static.crunchyroll.com/fms/portrait_poster/426x639/70559940-e6df-4564-be9c-655613b1bf23.png"
+        },
+        {
+            "title":"Undead Murder Farce",
+            "url":"https://www.crunchyroll.com/es/series/GMEHME7XV/undead-murder-farce?utm_source=cap_cr&utm_medium=carousel_2&utm_campaign=undead-murder-farce_la&referrer=cap_cr_carousel_2_undead-murder-farce_la_230830",
+            "img1":"https://static.crunchyroll.com/fms/landscape_poster/960x540/f00417ba-0ccd-493d-b7ff-6ca326a09104.png",
+            "img2":"https://static.crunchyroll.com/fms/portrait_poster/426x639/1e39f46e-5f49-479d-8b43-c3b22d600236.png"
+        }
+    ]
+}

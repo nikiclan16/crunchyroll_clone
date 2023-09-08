@@ -18,6 +18,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "auth/firebase/provider.js", "store/auth/thunks.js", "store/auth/thunks.js", "store/auth/authSlice.js", "components/home/Slider.tsx", "pages/login/index.jsx", "components/home/navbar/components/RightNavbarMenu.jsx", "pages/register/index.jsx", "hooks/useForm.js", "components/home/navbar/components/NotAuthRightNavbar.jsx", "components/home/navbar/components/ProfileMenu.jsx", "components/home/navbar/components/RowsAvatar.jsx"],
   "exclude": ["node_modules"]
 }
