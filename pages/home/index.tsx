@@ -16,6 +16,7 @@ import data from "../../mocks/portada.json";
 
 import styles from "../../styles/home.module.css";
 import Image from "next/image";
+import Head from "next/head";
 
 const HomePage = () => {
   const { status } = useCheckAuth();
@@ -33,6 +34,10 @@ const HomePage = () => {
 
   return (
     <>
+      <Head>
+        <link rel="icon" href="https://www.crunchyroll.com/build/assets/img/favicons/favicon-16x16.png" sizes="any" />
+        <title>Crunchyroll · Home</title>
+      </Head>
       <NavbarHome />
       <Slider sliderImages={sliderImages.sliderImages} />
       <Box className={styles["home-container"]}>

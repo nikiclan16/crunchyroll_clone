@@ -26,6 +26,7 @@ import {
 import { IdiomsAndPolitics } from "@/components/Footers/IdiomsAndPolitics";
 
 import styles from "../../styles/auth.module.css";
+import Head from "next/head";
 
 //form validation
 const formData = {
@@ -89,6 +90,10 @@ const RegisterPage = () => {
 
   return (
     <>
+      <Head>
+        <link rel="icon" href="https://www.crunchyroll.com/build/assets/img/favicons/favicon-16x16.png" sizes="any" />
+        <title>Crunchyroll · Register</title>
+      </Head>
       <AlertForm open={open} setOpen={setOpen} />
       <Box
         sx={{

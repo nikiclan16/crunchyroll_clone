@@ -21,6 +21,7 @@ import data from "../../mocks/portada.json";
 import offers from "../../mocks/offersCards.json";
 
 import styles from "../../styles/offer.module.css";
+import Head from "next/head";
 
 const OfferPage: NextPage = () => {
   const { push } = useRouter();
@@ -31,6 +32,10 @@ const OfferPage: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <link rel="icon" href="https://www.crunchyroll.com/build/assets/img/favicons/favicon-16x16.png" sizes="any" />
+        <title>Crunchyroll · Offers</title>
+      </Head>
       <Box className={styles["container-section-1"]}>
         <NavbarOffers />
         <Box className={styles["content-section-1"]}>
