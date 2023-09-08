@@ -11,7 +11,7 @@ import { RootState } from '@/store/store';
 import NotAuthRightNavbar from './components/NotAuthRightNavbar';
 import { useMediaQuery } from '@mui/material';
 import { LeftDrawer } from './components/LeftDrawer';
-import styles from "../../../styles/home.module.css";
+import styles from "../../../styles/Home.module.css";
 
 
 export default function NavbarHome() {

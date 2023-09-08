@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Avatar, Box, Typography } from '@mui/material';
 import React from 'react';
-import styles from "../../../../styles/home.module.css";
+import styles from "../../../../styles/Home.module.css";
 import Image from 'next/image';
 
 export const RowsAvatar = ({ title, RowsAvatarProps, selectedAvatar, handleAvatarClick }) => {

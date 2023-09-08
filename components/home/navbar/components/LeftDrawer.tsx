@@ -3,7 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import React, { useState } from 'react'
 import Link from 'next/link';
 import data from "../../../../mocks/HomeNavbar.json";
-import styles from "../../../../styles/home.module.css";
+import styles from "../../../../styles/Home.module.css";
 
 export const LeftDrawer = () => {
 

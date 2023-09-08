@@ -3,7 +3,7 @@ import {FC} from 'react';
 import { Box, Typography } from '@mui/material';
 import { ButtonVerPlanesPremium } from '../../public/Buttons/ButtonVerPlanesPremium';
 
-import styles from "../../styles/offer.module.css";
+import styles from "../../styles/Offer.module.css";
 import Image from 'next/image';
 
 interface PortadaData {

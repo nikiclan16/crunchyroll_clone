@@ -5,7 +5,7 @@ import { TiktokIcon } from "@/public/Icons/TiktokIcon"
 import { TwitterIcon } from "@/public/Icons/TwitterIcon"
 import { YoutubeIcon } from "@/public/Icons/YoutubeIcon"
 import { Box, Typography } from "@mui/material";
-import styles from "../styles/home.module.css";
+import styles from "../styles/Home.module.css";
 
 const footerNavigationData = [
     'Explorar lo más popular',

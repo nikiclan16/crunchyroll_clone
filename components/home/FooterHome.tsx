@@ -2,7 +2,7 @@
 import { ConnectWithUsFooter, CrunchyrollFooter, CuentaFooter, NavigationFooter } from '@/mocks/dataFooter';
 import { Box, Divider, useMediaQuery } from '@mui/material'
 import React from 'react'
-import styles from "../../styles/home.module.css";
+import styles from "../../styles/Home.module.css";
 
 
 export const FooterHome = () => {

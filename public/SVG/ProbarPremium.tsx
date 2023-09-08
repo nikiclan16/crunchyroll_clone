@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 import React from 'react'
 import { CrownRightNavbar } from '../Icons/CrownRightNavbar';
-import styles from "../../styles/home.module.css";
+import styles from "../../styles/Home.module.css";
 
 export const ProbarPremium = () => {
 

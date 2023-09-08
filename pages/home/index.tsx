@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
 import { useCheckAuth } from "@/hooks/useCheckAuth";
@@ -14,7 +15,7 @@ import { ButtonVerTodo } from "@/public/Buttons/ButtonVerTodo";
 
 import data from "../../mocks/portada.json";
 
-import styles from "../../styles/home.module.css";
+import styles from "../../styles/Home.module.css";
 import Image from "next/image";
 import Head from "next/head";
 
@@ -274,11 +275,9 @@ const HomePage = () => {
               mt: "70px",
             }}
           >
-            <Image
+            <img
               src="https://www.crunchyroll.com/build/assets/img/home/yuzu.png"
               alt="Yuzu"
-              width={100}
-              height={100}
             />
             <Typography
               variant="h3"

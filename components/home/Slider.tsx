@@ -14,7 +14,7 @@ import { Box, useMediaQuery } from "@mui/material";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Link from "next/link";
 
-import styles from "../../styles/home.module.css";
+import styles from "../../styles/Home.module.css";
 
 interface sliderData {
   title: string;

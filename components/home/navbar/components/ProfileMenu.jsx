@@ -26,7 +26,7 @@ import HomeNavbar from "../../../../mocks/HomeNavbar.json";
 
 import { startUpdatePhotoURL } from "@/store/auth/thunks";
 
-import styles from "../../../../styles/home.module.css";
+import styles from "../../../../styles/Home.module.css";
 import Image from "next/image";
 
 export const ProfileMenu = () => {
