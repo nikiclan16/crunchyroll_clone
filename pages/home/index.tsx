@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Link from "next/link";
 
 import { useCheckAuth } from "@/hooks/useCheckAuth";
@@ -88,7 +88,7 @@ const HomePage = () => {
                 width: "100%",
               }}
             >
-              <Image
+              <img
                 className={styles["image-responsive"]}
                 src={lisaURL}
                 alt="lisa"
@@ -153,7 +153,7 @@ const HomePage = () => {
                 width: "100%",
               }}
             >
-              <Image
+              <img
                 className={styles["image-responsive"]}
                 src={liarURL}
                 alt="liarLiar"
@@ -242,7 +242,7 @@ const HomePage = () => {
                 width: "100%",
               }}
             >
-              <Image
+              <img
                 className={styles["image-responsive"]}
                 src={knyURL}
                 alt="demonSlayer"

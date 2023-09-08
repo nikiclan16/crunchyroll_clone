@@ -38,7 +38,7 @@ export const ScreensAndCards:FC<ScreensAndCardsProps> = ({portadasData}) => {
               {
                 portadasData.map((portada, index) => (
                   <div key={index} className={styles["portadas-row-section-2"]}>
-                    <Image className={styles["portadas-row-section-2"]} src={portada.src} alt={portada.title} width={180} height={270} />
+                    <img className={styles["portadas-row-section-2"]} src={portada.src} alt={portada.title} width={180} height={270} />
                   </div>
                 ))
               }

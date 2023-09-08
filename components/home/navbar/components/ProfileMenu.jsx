@@ -22,7 +22,7 @@ import {
 import { Section1, Section2, Section3 } from "./Sections";
 import { RowsAvatar } from "./RowsAvatar";
 import HomeNavbar from "../../../../mocks/HomeNavbar.json";
-import Image from "next/image";
+
 import { startUpdatePhotoURL } from "@/store/auth/thunks";
 
 import styles from "../../../../styles/home.module.css";
@@ -230,7 +230,7 @@ export const ProfileMenu = () => {
             aria-expanded={open ? "true" : undefined}
           >
             <Avatar sx={{ width: 35, height: 35 }}>
-              <Image width={36} height={36} src={photoURL} alt="profile" />
+              <img width={36} height={36} src={photoURL} alt="profile" />
             </Avatar>
           </IconButton>
         </Tooltip>
@@ -266,7 +266,7 @@ export const ProfileMenu = () => {
           >
             <Box onClick={handleOpenDrop}>
               <StyledBadge badgeContent={<EditIcon fontSize="" />}>
-                <Image
+                <img
                   style={{
                     width: "55px",
                     height: "55px",
