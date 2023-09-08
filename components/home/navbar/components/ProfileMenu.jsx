@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ButtonPruebaGratuitaYellow } from "@/public/Buttons/ButtonPruebaGratuitaYellow";
@@ -97,7 +98,7 @@ export const ProfileMenu = () => {
               }}
             >
               <Avatar className={styles["selected-avatar"]}>
-                <Image
+                <img
                   src={selectedAvatar === null ? photoURL : selectedAvatar}
                   alt="perfil"
                 />
@@ -267,15 +268,13 @@ export const ProfileMenu = () => {
           >
             <Box onClick={handleOpenDrop}>
               <StyledBadge badgeContent={<EditIcon fontSize="" />}>
-                <Image
+                <img
                   style={{
                     width: "55px",
                     height: "55px",
                     borderRadius: "50%",
                     cursor: "pointer",
                   }}
-                  width={100}
-                  height={100}
                   src={photoURL}
                   alt="profile"
                 />

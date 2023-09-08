@@ -28,7 +28,7 @@ const HomePage = () => {
     ? data.adds.demonslayer[1]
     : data.adds.demonslayer[2];
 
-    
+
   if (status === "checking") return <Loader />;
 
   return (
@@ -272,6 +272,8 @@ const HomePage = () => {
             <Image
               src="https://www.crunchyroll.com/build/assets/img/home/yuzu.png"
               alt="Yuzu"
+              width={100}
+              height={100}
             />
             <Typography
               variant="h3"
