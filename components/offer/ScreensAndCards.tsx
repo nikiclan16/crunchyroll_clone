@@ -1,10 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
 import {FC} from 'react';
 
 import { Box, Typography } from '@mui/material';
 import { ButtonVerPlanesPremium } from '../../public/Buttons/ButtonVerPlanesPremium';
 
 import styles from "../../styles/offer.module.css";
+import Image from 'next/image';
 
 interface PortadaData {
   title: string;
@@ -37,7 +37,7 @@ export const ScreensAndCards:FC<ScreensAndCardsProps> = ({portadasData}) => {
               {
                 portadasData.map((portada, index) => (
                   <div key={index} className={styles["portadas-row-section-2"]}>
-                    <img className={styles["portadas-row-section-2"]} src={portada.src} alt={portada.title} width={180} height={270} />
+                    <Image className={styles["portadas-row-section-2"]} src={portada.src} alt={portada.title} width={180} height={270} />
                   </div>
                 ))
               }

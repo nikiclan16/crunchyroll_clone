@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ButtonPruebaGratuitaYellow } from "@/public/Buttons/ButtonPruebaGratuitaYellow";
@@ -27,6 +26,7 @@ import HomeNavbar from "../../../../mocks/HomeNavbar.json";
 import { startUpdatePhotoURL } from "@/store/auth/thunks";
 
 import styles from "../../../../styles/home.module.css";
+import Image from "next/image";
 
 export const ProfileMenu = () => {
   const { displayName, photoURL } = useSelector((state) => state.auth);
@@ -97,7 +97,7 @@ export const ProfileMenu = () => {
               }}
             >
               <Avatar className={styles["selected-avatar"]}>
-                <img
+                <Image
                   src={selectedAvatar === null ? photoURL : selectedAvatar}
                   alt="perfil"
                 />
@@ -231,7 +231,7 @@ export const ProfileMenu = () => {
             aria-expanded={open ? "true" : undefined}
           >
             <Avatar sx={{ width: 35, height: 35 }}>
-              <img width={36} height={36} src={photoURL} alt="profile" />
+              <Image width={36} height={36} src={photoURL} alt="profile" />
             </Avatar>
           </IconButton>
         </Tooltip>
@@ -267,7 +267,7 @@ export const ProfileMenu = () => {
           >
             <Box onClick={handleOpenDrop}>
               <StyledBadge badgeContent={<EditIcon fontSize="" />}>
-                <img
+                <Image
                   style={{
                     width: "55px",
                     height: "55px",

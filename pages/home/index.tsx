@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
 import { useCheckAuth } from "@/hooks/useCheckAuth";
@@ -16,6 +15,7 @@ import { ButtonVerTodo } from "@/public/Buttons/ButtonVerTodo";
 import data from "../../mocks/portada.json";
 
 import styles from "../../styles/home.module.css";
+import Image from "next/image";
 
 const HomePage = () => {
   const { status } = useCheckAuth();
@@ -88,7 +88,7 @@ const HomePage = () => {
                 width: "100%",
               }}
             >
-              <img
+              <Image
                 className={styles["image-responsive"]}
                 src={lisaURL}
                 alt="lisa"
@@ -153,7 +153,7 @@ const HomePage = () => {
                 width: "100%",
               }}
             >
-              <img
+              <Image
                 className={styles["image-responsive"]}
                 src={liarURL}
                 alt="liarLiar"
@@ -242,7 +242,7 @@ const HomePage = () => {
                 width: "100%",
               }}
             >
-              <img
+              <Image
                 className={styles["image-responsive"]}
                 src={knyURL}
                 alt="demonSlayer"
@@ -268,7 +268,7 @@ const HomePage = () => {
               mt: "70px",
             }}
           >
-            <img
+            <Image
               src="https://www.crunchyroll.com/build/assets/img/home/yuzu.png"
               alt="Yuzu"
             />

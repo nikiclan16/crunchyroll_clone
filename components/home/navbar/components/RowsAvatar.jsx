@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 import { Avatar, Box, Typography } from '@mui/material';
 import React from 'react';
 import styles from "../../../../styles/home.module.css";
+import Image from 'next/image';
 
 export const RowsAvatar = ({ title, RowsAvatarProps, selectedAvatar, handleAvatarClick }) => {
   return (
@@ -21,7 +21,7 @@ export const RowsAvatar = ({ title, RowsAvatarProps, selectedAvatar, handleAvata
                 '&:hover': selectedAvatar === data.src ? {} : { border: '4px solid #fff' },
               }}
             >
-              <img className={styles["image-responsive"]} width={100} height={100} src={data.src} alt={data.alt} />
+              <Image className={styles["image-responsive"]} width={100} height={100} src={data.src} alt={data.alt} />
             </Avatar>
           ))}
         </Box>
