@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 
 import { useCheckAuth } from "@/hooks/useCheckAuth";
