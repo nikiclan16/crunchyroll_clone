@@ -18,7 +18,7 @@ import { Box, Typography } from "@mui/material";
 import { IdiomsAndPolitics } from "@/components/Footers/IdiomsAndPolitics";
 
 import data from "../../mocks/portada.json";
-import { offers } from "../../mocks/offersCards.json";
+import offers from "../../mocks/offersCards.json";
 
 import styles from "../../styles/offer.module.css";
 
@@ -44,7 +44,7 @@ const OfferPage: NextPage = () => {
 
       <ScreensAndCards portadasData={data.list} />
       <div id="seccion-destino">
-        <OffersCards offersData={offers} />
+        <OffersCards offersData={offers.offers} />
       </div>
 
       <Box
