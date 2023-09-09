@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import {CardIcon, RelojIcon, ShoppingBag, Important} from "@/public/SVG";
 
-import styles from "../../styles/Offer.module.css";
+import styles from "../../styles/offer.module.css";
 
 
 export const FooterOffers = () => {

@@ -21,7 +21,7 @@ import { IdiomsAndPolitics } from "@/components/Footers/IdiomsAndPolitics";
 import data from "../../mocks/portada.json";
 import offers from "../../mocks/offersCards.json";
 
-import styles from "../../styles/Offer.module.css";
+import styles from "../../styles/offer.module.css";
 
 
 const OfferPage: NextPage = () => {
