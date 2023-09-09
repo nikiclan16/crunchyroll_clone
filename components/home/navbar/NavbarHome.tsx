@@ -23,8 +23,8 @@ export default function NavbarHome() {
 
   return (
       <AppBar className={styles["navbar"]}>
-        <Toolbar sx={{ display: 'flex', justifyContent: 'space-between',maxWidth:'1520px',width:'100%'}}>
-          <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        <Toolbar style={{ display: 'flex', justifyContent: 'space-between',maxWidth:'1520px',width:'100%'}}>
+          <Box style={{ display: 'flex', alignItems: 'center' }}>
             {
               maxWith979px 
               ? (

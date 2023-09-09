@@ -10,7 +10,7 @@ export const NavbarRegisterLogin = () => {
   
   return (
       <AppBar className='navbar'>
-        <Toolbar sx={{justifyContent:'space-between',width:'100%'}}>
+        <Toolbar style={{justifyContent:'space-between',width:'100%'}}>
            <CrunchyIcon/>
            <Box/>
         </Toolbar>

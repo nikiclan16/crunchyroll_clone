@@ -37,7 +37,7 @@ export const Section1 = () => {
             <ListItemIcon>
               {data.icon}
             </ListItemIcon>
-            <Typography sx={{color:'#ffffff',fontSize:'1rem'}}>{data.text}</Typography>
+            <Typography style={{color:'#ffffff',fontSize:'1rem'}}>{data.text}</Typography>
           </MenuItem>
           ))
       }
@@ -69,7 +69,7 @@ export const Section2 = () => {
           }}
         >
           <ListItemIcon>{data.icon}</ListItemIcon>
-          <Typography sx={{ color: '#ffffff', fontSize: '1rem' }}>
+          <Typography style={{ color: '#ffffff', fontSize: '1rem' }}>
             {data.text}
           </Typography>
         </MenuItem>
@@ -93,7 +93,7 @@ export const Section3 = () => {
       <ListItemIcon>
         <Desconectar/>
       </ListItemIcon>
-      <Typography sx={{color:'#ffffff',fontSize:'1rem'}}>Desconectar</Typography>
+      <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Desconectar</Typography>
     </MenuItem>
   )
 }

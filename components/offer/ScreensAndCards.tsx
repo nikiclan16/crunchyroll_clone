@@ -28,7 +28,7 @@ export const ScreensAndCards:FC<ScreensAndCardsProps> = ({portadasData}) => {
           <Box className={styles['image-section-2']}/>
         </Box>
 
-        <Box mb={15} sx={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',pb:'40px',background:'#fff linear-gradient(180deg, #0000, #F3F3F3)'}}>
+        <Box mb={15} style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',paddingBottom:'40px',background:'#fff linear-gradient(180deg, #0000, #F3F3F3)'}}>
           <Typography className='header-size-2_125rem-responsive'>
             Más de 30,000 episodios
           </Typography>

@@ -12,10 +12,10 @@ export const ButtonInitFree = () => {
       };
 
   return (
-  <Button sx={{ mb: "10px" }} className="button-orange-primary" onClick={handleScroll}>
-    <Typography sx={{ textTransform:'uppercase',fontSize:'0.875rem',fontWeight:'800',padding:'0px 16px'}}>
+  <Button style={{ marginBottom: "10px" }} className="button-orange-primary" onClick={handleScroll}>
+    <Typography style={{ textTransform:'uppercase',fontSize:'0.875rem',fontWeight:'800',padding:'0px 16px'}}>
         iniciar prueba gratuita de 14 días
     </Typography>
-</Button>
+  </Button>
   )
 }

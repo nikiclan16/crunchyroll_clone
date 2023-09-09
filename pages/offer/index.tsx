@@ -3,6 +3,7 @@ import React from "react";
 import { NextPage } from "next";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Head from "next/head";
 
 import { useCheckAuth } from "@/hooks";
 
@@ -21,7 +22,7 @@ import data from "../../mocks/portada.json";
 import offers from "../../mocks/offersCards.json";
 
 import styles from "../../styles/Offer.module.css";
-import Head from "next/head";
+
 
 const OfferPage: NextPage = () => {
   const { push } = useRouter();
@@ -55,7 +56,7 @@ const OfferPage: NextPage = () => {
       <Box
         mt={2}
         mb={4}
-        sx={{
+        style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -100,7 +101,7 @@ const OfferPage: NextPage = () => {
         </div>
 
         <Box
-          sx={{
+          style={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",

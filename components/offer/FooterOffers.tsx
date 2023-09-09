@@ -40,7 +40,7 @@ export const FooterOffers = () => {
             <Box>
               {offer.icon}
             </Box>
-            <Box sx={{ mt: "10px" }}>
+            <Box style={{ marginTop: "10px" }}>
               <Typography className={styles['text-footer-section-1']}>
                 {offer.text}
               </Typography>

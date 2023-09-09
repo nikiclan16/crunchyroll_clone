@@ -20,9 +20,9 @@ export const NavbarOffers = () => {
   const disabledButton = status === "authenticated" ? "none" : "";
 
   return (
-    <AppBar className={styles.navbar}>
+    <AppBar className={styles['navbar']}>
       <Toolbar
-        sx={{
+        style={{
           justifyContent: "space-between",
           width: "100%",
         }}
@@ -32,7 +32,7 @@ export const NavbarOffers = () => {
           <Link href={"/login"} passHref prefetch>
             <Button
               className={styles['button-acceder']}
-              sx={{ display: disabledButton }}
+              style={{ display: disabledButton }}
             >
               <h1>ACCEDER</h1>
             </Button>

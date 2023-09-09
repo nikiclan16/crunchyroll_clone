@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import Image from "next/image";
+import Head from "next/head";
 
 import { useCheckAuth } from "@/hooks/useCheckAuth";
 
@@ -16,8 +18,7 @@ import { ButtonVerTodo } from "@/public/Buttons/ButtonVerTodo";
 import data from "../../mocks/portada.json";
 
 import styles from "../../styles/Home.module.css";
-import Image from "next/image";
-import Head from "next/head";
+
 
 const HomePage = () => {
   const { status } = useCheckAuth();
@@ -43,7 +44,7 @@ const HomePage = () => {
       <Slider sliderImages={sliderImages.sliderImages} />
       <Box className={styles["home-container"]}>
         <Box
-          sx={{
+          style={{
             display: "flex",
             flexDirection: "column",
             margin: "0px auto",
@@ -65,7 +66,7 @@ const HomePage = () => {
 
           <Box
             className="custom-scroll"
-            sx={{
+            style={{
               display: "flex",
               width: "100%",
               alignItems: "center",
@@ -90,7 +91,7 @@ const HomePage = () => {
             rel="noopener noreferrer"
           >
             <Box
-              sx={{
+              style={{
                 maxWidth: "1050px",
                 width: "100%",
               }}
@@ -117,11 +118,11 @@ const HomePage = () => {
           </Typography>
           <Typography
             variant="h2"
-            sx={{
+            style={{
               color: "#dadada",
               fontSize: "1rem",
               fontWeight: "500",
-              mb: "10px",
+              marginBottom: "10px",
             }}
           >
             ¡Disfruta aquí de algunos de nuestros títulos más populares!
@@ -131,7 +132,7 @@ const HomePage = () => {
 
           <Box
             className="custom-scroll"
-            sx={{
+            style={{
               display: "flex",
               width: "100%",
               alignItems: "center",
@@ -155,7 +156,7 @@ const HomePage = () => {
             rel="noopener noreferrer"
           >
             <Box
-              sx={{
+              style={{
                 maxWidth: "1050px",
                 width: "100%",
               }}
@@ -178,7 +179,7 @@ const HomePage = () => {
           />
 
           <Box
-            sx={{
+            style={{
               display: "flex",
               justifyContent: "space-between",
               alignItems: "center",
@@ -207,7 +208,7 @@ const HomePage = () => {
               >
                 <Typography
                   variant="h2"
-                  sx={{ fontSize: ".800rem", fontWeight: "900" }}
+                  style={{ fontSize: ".800rem", fontWeight: "900" }}
                 >
                   VER TODO
                 </Typography>
@@ -220,7 +221,7 @@ const HomePage = () => {
 
           <Box
             className="custom-scroll"
-            sx={{
+            style={{
               display: "flex",
               width: "100%",
               alignItems: "center",
@@ -244,7 +245,7 @@ const HomePage = () => {
             rel="noopener noreferrer"
           >
             <Box
-              sx={{
+              style={{
                 maxWidth: "1050px",
                 width: "100%",
               }}
@@ -267,12 +268,12 @@ const HomePage = () => {
           />
 
           <Box
-            sx={{
+            style={{
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
               alignItems: "center",
-              mt: "70px",
+              marginTop: "70px",
             }}
           >
             <img
@@ -281,13 +282,13 @@ const HomePage = () => {
             />
             <Typography
               variant="h3"
-              sx={{
+              style={{
                 fontSize: "1.25rem",
                 fontWeight: "600",
                 textAlign: "center",
                 color: "#fff",
-                mt: "10px",
-                mb: "30px",
+                marginTop: "10px",
+                marginBottom: "30px",
               }}
             >
               ¿Sigues buscando algo que ver?

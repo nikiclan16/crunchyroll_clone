@@ -34,7 +34,7 @@ export default function SelectIdioms() {
       <div>
         <FormControl className="idioms-footer">
           <Select
-            sx={{
+            style={{
               position: 'relative',
               border: '2px solid #000000',
               borderRadius: '0',

@@ -10,7 +10,7 @@ interface DisplayNameProps {
 
 export const DisplayName = ({displayName,onInputChange,displayNameValid,formSubmitted}:DisplayNameProps) => {
   return (
-    <Box sx={{ width: "100%", mb: "30px" }}>
+    <Box style={{ width: "100%", marginBottom: "30px" }}>
         <TextField
           error={!!displayNameValid && formSubmitted}
           color="warning"

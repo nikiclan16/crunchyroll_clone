@@ -12,7 +12,7 @@ export default function LeftNavbarMenu() {
 
   return (
     <React.Fragment>
-      <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
+      <Box style={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
         
         <ExplorarMenu/>
 

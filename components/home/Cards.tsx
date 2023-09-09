@@ -25,10 +25,10 @@ export const Cards:FC<CardsProps> = ({cardsData}) => {
           
           return (
             <Link className="no-decoration" target="_blank" rel="noopener noreferrer" href={data.url} key={data.title}>
-                <Box sx={{width:'150px'}}>
+                <Box style={{width:'150px'}}>
                   <Image src={data.src} alt={data.title} height={225} width={150}/>
-                  <Typography variant='h4' sx={{fontSize:'.875rem',fontWeight:'500',lineHeight:'1.125rem',color:'#fff'}}>{data.title}</Typography>
-                  <Typography variant='h4' sx={{fontSize:'.875rem',fontWeight:'500',lineHeight:'1.125rem',color:'#a0a0a0'}}>{data.subtitle}</Typography>
+                  <Typography variant='h4' style={{fontSize:'.875rem',fontWeight:'500',lineHeight:'1.125rem',color:'#fff'}}>{data.title}</Typography>
+                  <Typography variant='h4' style={{fontSize:'.875rem',fontWeight:'500',lineHeight:'1.125rem',color:'#a0a0a0'}}>{data.subtitle}</Typography>
                 </Box>
             </Link>
         )})

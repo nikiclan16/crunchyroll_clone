@@ -10,7 +10,7 @@ interface EmailNameProps {
 
 export const Email = ({email,onInputChange,emailValid,formSubmitted}:EmailNameProps) => {
   return (
-    <Box sx={{ width: "100%", mb: "30px" }}>
+    <Box style={{ width: "100%", marginBottom: "30px" }}>
         <TextField
             error={!!emailValid && formSubmitted}
             color="warning"

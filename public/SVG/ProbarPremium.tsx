@@ -16,10 +16,10 @@ export const ProbarPremium = () => {
                 backgroundColor: "#000000",
         },}}>
             <CrownRightNavbar/>        
-            <Box className="display-none-567" sx={{display:'flex',flexDirection:'column'}} >
-                <Typography sx={{color:'#FAB818',fontSize:'.625rem',fontWeight:'700'}}>PROBAR</Typography>
-                <Typography sx={{color:'#FAB818',fontSize:'.625rem',fontWeight:'700'}}>GRATIS</Typography>
-                <Typography sx={{color:'#ffffff',fontSize:'.625rem',fontWeight:'700'}}>PREMIUM</Typography>
+            <Box className="display-none-567" style={{display:'flex',flexDirection:'column'}} >
+                <Typography style={{color:'#FAB818',fontSize:'.625rem',fontWeight:'700'}}>PROBAR</Typography>
+                <Typography style={{color:'#FAB818',fontSize:'.625rem',fontWeight:'700'}}>GRATIS</Typography>
+                <Typography style={{color:'#ffffff',fontSize:'.625rem',fontWeight:'700'}}>PREMIUM</Typography>
             </Box>
         </Box>
     </>

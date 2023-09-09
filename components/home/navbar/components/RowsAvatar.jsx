@@ -6,15 +6,15 @@ import Image from 'next/image';
 
 export const RowsAvatar = ({ title, RowsAvatarProps, selectedAvatar, handleAvatarClick }) => {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', mb: '30px'}}>
-      <Typography sx={{fontSize: '1.125rem', fontWeight: '500', mb: '8px', color: '#fff'}}>{title}</Typography>
-        <Box sx={{display:'flex'}}>
+    <Box style={{ display: 'flex', flexDirection: 'column', marginBottom: '30px'}}>
+      <Typography style={{fontSize: '1.125rem', fontWeight: '500', marginBottom: '8px', color: '#fff'}}>{title}</Typography>
+        <Box style={{display:'flex'}}>
           {RowsAvatarProps.map((data,index) => (
             <Avatar
               key={data.alt}
               onClick={() => handleAvatarClick(data.src)}
               sx={{
-                mr:index === 4 ? '0px' : '23px',
+                marginRight:index === 4 ? '0px' : '23px',
                 width: '100px',
                 height: '100px',
                 border: selectedAvatar === data.src ? '4px solid #F47521' : '4px solid #23252b',

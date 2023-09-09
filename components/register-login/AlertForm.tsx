@@ -31,10 +31,10 @@ export const AlertForm = ({ open, setOpen}: AlertFormProps) => {
   }, [open, setOpen]);
 
   return (
-    <Box sx={{ width: '100%', position: 'absolute', top: '0px', zIndex: '3' }}>
+    <Box style={{ width: '100%', position: 'absolute', top: '0px', zIndex: '3' }}>
       <Collapse in={open}>
         <Alert
-          sx={{
+          style={{
             display: 'flex',
             alignItems: 'center',
             borderRadius: '0px',

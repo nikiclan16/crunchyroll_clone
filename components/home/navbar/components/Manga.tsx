@@ -17,7 +17,7 @@ export const Manga = () => {
                 color:'#ffffff'
               },
               }}>
-                <Typography sx={{fontSize:'1rem',fontWeight:'500'}}>Manga</Typography>
+                <Typography style={{fontSize:'1rem',fontWeight:'500'}}>Manga</Typography>
         </Box>
     </Link>
   )

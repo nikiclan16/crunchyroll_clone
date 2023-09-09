@@ -19,7 +19,7 @@ const footerNavigationData = [
 export const NavigationFooter = () => {
     return(
         <Box className={styles["container-row-footer"]}>
-            <Typography variant='h4' sx={{fontSize:'1rem',fontWeight:'600',color:'#fff',mb:'10px'}}>Navegación</Typography>
+            <Typography variant='h4' style={{fontSize:'1rem',fontWeight:'600',color:'#fff',marginBottom:'10px'}}>Navegación</Typography>
             <Box className={styles["container-column-footer"]}>
                 {
                 footerNavigationData.map((data,index) => (
@@ -57,14 +57,14 @@ const footerConnectWithUsData = [
 export const ConnectWithUsFooter = () => {
     return (
         <Box className={styles["container-row-footer"]}>
-            <Typography variant='h4' sx={{fontSize:'1rem',fontWeight:'600',color:'#fff',mb:'10px'}}>Conecta con nosotros</Typography>
+            <Typography variant='h4' style={{fontSize:'1rem',fontWeight:'600',color:'#fff',marginBottom:'10px'}}>Conecta con nosotros</Typography>
 
             <Box className={styles["container-column-footer"]}>
                 {
                     footerConnectWithUsData.map(data => (
                         <Box width='fit-content' className='iconsHoverToColorWhite' sx={{display:'flex',alignItems:'center',mb:'10px',color:'#a0a0a0',cursor:'pointer',transitionDuration:'.2s','&:hover':{color:'#fff',textDecoration:'underline'}}} key={data.text}>
                             {data.icon}
-                            <Typography sx={{ml:'6px',fontSize:'.875rem',fontWeight:'500'}}>{data.text}</Typography>
+                            <Typography style={{marginLeft:'6px',fontSize:'.875rem',fontWeight:'500'}}>{data.text}</Typography>
                         </Box>
                     ))
                 }
@@ -89,10 +89,10 @@ const CrunchyrollFooterData = [
 export const CrunchyrollFooter = () => {
     return (
         <Box className={styles["container-row-footer"]}>
-            <Typography variant='h4' sx={{fontSize:'1rem',fontWeight:'600',color:'#fff',mb:'10px'}}>Crunchyroll</Typography>
+            <Typography variant='h4' style={{fontSize:'1rem',fontWeight:'600',color:'#fff',marginBottom:'10px'}}>Crunchyroll</Typography>
 
             <Box className={styles["container-column-footer"]}>
-                <Box width='fit-content' sx={{display:'flex',alignItems:'center'}}>
+                <Box width='fit-content' style={{display:'flex',alignItems:'center'}}>
                 <CrownYellowFooter/>
                 <Typography sx={{lineHeight:'18px',fontSize:'.875rem',fontWeight:'500',color:'#FAB818',mb:'10px',cursor:'pointer',transitionDuration:'.2s','&:hover':{color:'#fff',textDecoration:'underline'}}}>Comienza tu Prueba Gratuita</Typography>
                 </Box>
@@ -118,7 +118,7 @@ export const CrunchyrollFooter = () => {
 export const CuentaFooter = () => {
     return (
         <Box>
-            <Typography variant='h4' sx={{fontSize:'1rem',fontWeight:'600',color:'#fff',mb:'10px'}}>Cuenta</Typography>
+            <Typography variant='h4' style={{fontSize:'1rem',fontWeight:'600',color:'#fff',marginBottom:'10px'}}>Cuenta</Typography>
 
             <Box>
                 {

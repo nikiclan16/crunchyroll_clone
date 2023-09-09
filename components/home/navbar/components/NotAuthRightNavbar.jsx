@@ -29,7 +29,7 @@ export default function RightNavbarMenu() {
 
   return (
     <React.Fragment>
-      <Box sx={{display: 'flex', alignItems: 'center', textAlign: 'center',color:'#dadada' }}>
+      <Box style={{display: 'flex', alignItems: 'center', textAlign: 'center',color:'#dadada' }}>
 
         <ProbarPremium/>
 
@@ -69,10 +69,10 @@ export default function RightNavbarMenu() {
           transformOrigin={{ horizontal: 'right', vertical: 'top' }}
           anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
         >
-          <Box sx={{backgroundColor:'#000000'}}>
+          <Box style={{backgroundColor:'#000000'}}>
             <CrearCuenta/>
             <Acceder/>
-            <MenuItem sx={{display:'flex',justifyContent:'center',alignItems:'center'}}>
+            <MenuItem style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
               <ButtonPruebaGratuitaYellow/>
             </MenuItem>
           </Box>

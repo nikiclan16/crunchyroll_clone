@@ -13,7 +13,7 @@ export default function RightNavbarMenu() {
 
   return (
     <React.Fragment>
-      <Box sx={{display: 'flex', alignItems: 'center', textAlign: 'center',color:'#dadada' }}>
+      <Box style={{display: 'flex', alignItems: 'center', textAlign: 'center',color:'#dadada' }}>
 
         <ProbarPremium/>
 

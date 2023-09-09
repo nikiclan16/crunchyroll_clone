@@ -4,7 +4,7 @@ import React from 'react'
 export const CheckBoxRegister = () => {
   return (
     <Box
-          sx={{
+          style={{
             display: "flex",
             alignItems: "flex-start",
             justifyContent: "flex-start",
@@ -13,9 +13,9 @@ export const CheckBoxRegister = () => {
             marginTop: "2rem",
           }}
         >
-          <Checkbox sx={{ padding: 0 }} />
+          <Checkbox style={{ padding: 0 }} />
           <Typography
-            sx={{
+            style={{
               fontWeight: 500,
               fontSize: "0.875rem",
               lineHeight: "1.125rem",

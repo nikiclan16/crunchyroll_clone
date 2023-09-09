@@ -3,7 +3,7 @@ import React from "react";
 
 export const ButtonBestOffer = () => {
   return (
-    <Button sx={{ mb: "10px" }} className="button-orange-primary">
+    <Button style={{ marginBottom: "10px" }} className="button-orange-primary">
       <h1
         style={{
           fontSize: "15px",

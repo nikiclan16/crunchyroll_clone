@@ -96,7 +96,7 @@ const RegisterPage = () => {
       </Head>
       <AlertForm open={open} setOpen={setOpen} />
       <Box
-        sx={{
+        style={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -135,7 +135,7 @@ const RegisterPage = () => {
 
           <Button
             className={`button-orange-primary ${styles["button-auth"]}`}
-            sx={{ mt: "30px", mb: "12px", width: "100%" }}
+            style={{ marginTop: "30px", marginBottom: "12px", width: "100%" }}
             onClick={register}
           >
             <h1
@@ -149,10 +149,10 @@ const RegisterPage = () => {
               Crear cuenta
             </h1>
           </Button>
-          <Box sx={{ maxWidth: "100%", width: "100%", textAlign: "center" }}>
+          <Box style={{ maxWidth: "100%", width: "100%", textAlign: "center" }}>
             <Typography
               variant="subtitle1"
-              sx={{
+              style={{
                 color: "rgb(160, 160, 160)",
                 fontSize: "0.75rem",
                 lineHeight: "1rem",

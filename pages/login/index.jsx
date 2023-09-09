@@ -83,7 +83,7 @@ const LoginPage = () => {
       </Head>
       <AlertForm open={open} setOpen={setOpen} />
       <Box
-        sx={{
+        style={{
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -114,7 +114,7 @@ const LoginPage = () => {
           <Button
             onClick={login}
             className={`button-orange-primary ${styles["button-auth"]}`}
-            sx={{ mt: "30px", mb: "12px", width: "100%" }}
+            style={{ marginTop: "30px", marginBottom: "12px", width: "100%" }}
           >
             <h1
               style={{
@@ -166,7 +166,7 @@ const LoginPage = () => {
           </div>
         </Box>
       </Box>
-      <Box sx={{ mt: "160px" }}>
+      <Box style={{ marginTop: "160px" }}>
         <IdiomsAndPolitics />
       </Box>
     </>

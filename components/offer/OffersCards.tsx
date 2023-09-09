@@ -32,14 +32,14 @@ interface OffersCardsProps {
 
 export const OffersCards:FC<OffersCardsProps> = ({offersData}) => {
   return (
-    <Box sx={{display:'flex',flexDirection:'column', justifyContent:'center', alignItems:'center',mb:'10px'}}>
+    <Box style={{display:'flex',flexDirection:'column', justifyContent:'center', alignItems:'center',marginBottom:'10px'}}>
       <Typography className="header-size-2_125rem-responsive">
         Consigue más con Premium
       </Typography>
-      <Typography sx={{textAlign:'center',marginBottom:'80px',fontSize:'1.125rem',fontWeight:'500',lineHeight:'1.625rem',color:'#59595B'}}>Los suscriptores disfrutan de anime con más ventajas.</Typography>
+      <Typography style={{textAlign:'center',marginBottom:'80px',fontSize:'1.125rem',fontWeight:'500',lineHeight:'1.625rem',color:'#59595B'}}>Los suscriptores disfrutan de anime con más ventajas.</Typography>
 
-      <Box className={styles["with-cards-section-3"]} sx={{display:'flex',justifyContent:'center',alignItems:'center',height:'30px',backgroundColor:'#2ABDBB'}}>
-        <Typography sx={{fontSize:'1.125rem',fontWeight:'550',color:'white'}}>¡MEJOR OFERTA!</Typography>
+      <Box className={styles["with-cards-section-3"]} style={{display:'flex',justifyContent:'center',alignItems:'center',height:'30px',backgroundColor:'#2ABDBB'}}>
+        <Typography style={{fontSize:'1.125rem',fontWeight:'550',color:'white'}}>¡MEJOR OFERTA!</Typography>
       </Box>
 
       <Box className={styles["container-cards-section-3"]}>
@@ -70,12 +70,12 @@ export const OffersCards:FC<OffersCardsProps> = ({offersData}) => {
 
             return (
               <>
-                <Box className={`${styles["with-cards-section-3"]} ${styles["offers-cards-section-3"]}`} key={offer.price} sx={{border:bestOfferBorder}}>
+                <Box className={`${styles["with-cards-section-3"]} ${styles["offers-cards-section-3"]}`} key={offer.price} style={{border:bestOfferBorder}}>
 
-                  <Box className={styles["first-part-offer-section-3"]} sx={{display:'flex',flexDirection:'column',alignItems:'center'}}>
+                  <Box className={styles["first-part-offer-section-3"]} style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
                     <CoronaOfferCards/>
-                    <Typography sx={{marginTop:'13px',fontSize:'1.125rem',fontWeight:'500'}}>{offer.fan}</Typography>
-                    <Typography variant="h2" align="center" marginTop="10px" fontSize="2.125rem" fontWeight='500' lineHeight="2.75rem" sx={{width:'105%'}}>
+                    <Typography style={{marginTop:'13px',fontSize:'1.125rem',fontWeight:'500'}}>{offer.fan}</Typography>
+                    <Typography variant="h2" align="center" marginTop="10px" fontSize="2.125rem" fontWeight='500' lineHeight="2.75rem" style={{width:'105%'}}>
                       {offer.price}
                     </Typography>
                     <p style={{textAlign:'center',marginBottom:'20px',fontSize:'0.6rem',fontWeight:'600',lineHeight:'1.625rem',color:'#59595B'}}>+ CUALQUIER IMPUESTO APLICABLE</p>
@@ -83,7 +83,7 @@ export const OffersCards:FC<OffersCardsProps> = ({offersData}) => {
                     <p style={{textAlign:'center',marginBottom:'15px',fontSize:'0.80rem',lineHeight:'1.625rem',fontWeight:'800',color:'#59595B',cursor:'pointer'}}>NO QUIERO LA PRUEBA GRATUITA</p>
                   </Box>
 
-                  <Box className={styles["second-part-offer-section-3"]} sx={{position:'relative',display:'flex', flexDirection:'column'}}>
+                  <Box className={styles["second-part-offer-section-3"]} style={{position:'relative',display:'flex', flexDirection:'column'}}>
 
                     <Box>
                       {withoutAdsIcon}

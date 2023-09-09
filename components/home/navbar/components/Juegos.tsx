@@ -17,7 +17,7 @@ export const Juegos = () => {
                 color:'#ffffff'
               },
               }}>
-                <Typography sx={{fontSize:'1rem',fontWeight:'500'}}>Juegos</Typography>
+                <Typography style={{fontSize:'1rem',fontWeight:'500'}}>Juegos</Typography>
         </Box>
     </Link>
   )

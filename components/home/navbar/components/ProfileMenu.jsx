@@ -89,7 +89,7 @@ export const ProfileMenu = () => {
             className={styles["avatar-modal-container"]}
           >
             <Box
-              sx={{
+              style={{
                 display: "flex",
                 alignItems: "center",
                 height: "200px",
@@ -105,14 +105,14 @@ export const ProfileMenu = () => {
               </Avatar>
 
               <Box
-                sx={{
+                style={{
                   display: "flex",
                   flexDirection: "column",
                   width: "100%",
                 }}
               >
                 <Typography
-                  sx={{
+                  style={{
                     fontSize: "1.375rem",
                     fontWeight: "600",
                     color: "#fff",
@@ -121,7 +121,7 @@ export const ProfileMenu = () => {
                   Selección de avatar
                 </Typography>
                 <Typography
-                  sx={{
+                  style={{
                     fontSize: "1rem",
                     fontWeight: "500",
                     color: "#a0a0a0",
@@ -231,7 +231,7 @@ export const ProfileMenu = () => {
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
           >
-            <Avatar sx={{ width: 35, height: 35 }}>
+            <Avatar style={{ width: 35, height: 35 }}>
               <Image width={36} height={36} src={photoURL} alt="profile" />
             </Avatar>
           </IconButton>
@@ -262,9 +262,9 @@ export const ProfileMenu = () => {
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
-        <Box sx={{ backgroundColor: "#000000" }}>
+        <Box style={{ backgroundColor: "#000000" }}>
           <Box
-            sx={{ display: "flex", padding: "10px 20px", alignItems: "center" }}
+            style={{ display: "flex", padding: "10px 20px", alignItems: "center" }}
           >
             <Box onClick={handleOpenDrop}>
               <StyledBadge badgeContent={<EditIcon fontSize="" />}>
@@ -281,12 +281,12 @@ export const ProfileMenu = () => {
               </StyledBadge>
             </Box>
             <Typography
-              sx={{
+              style={{
                 color: "#ffffff",
                 fontSize: "1.25rem",
                 fontWeight: "600",
                 textTransform: "capitalize",
-                ml: "20px",
+                marginLeft: "20px",
               }}
             >
               {displayName}
@@ -294,7 +294,7 @@ export const ProfileMenu = () => {
           </Box>
 
           <MenuItem
-            sx={{
+            style={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -303,15 +303,15 @@ export const ProfileMenu = () => {
             <ButtonPruebaGratuitaYellow />
           </MenuItem>
 
-          <Divider color="#23252B" sx={{ height: "2px" }} />
+          <Divider color="#23252B" style={{ height: "2px" }} />
 
           <Section1 />
 
-          <Divider color="#23252B" sx={{ height: "2px" }} />
+          <Divider color="#23252B" style={{ height: "2px" }} />
 
           <Section2 />
 
-          <Divider color="#23252B" sx={{ height: "2px" }} />
+          <Divider color="#23252B" style={{ height: "2px" }} />
 
           <Section3 />
         </Box>
