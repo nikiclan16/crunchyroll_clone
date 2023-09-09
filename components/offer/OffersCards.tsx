@@ -9,7 +9,7 @@ import { CoronaOfferCards } from '@/public/SVG/CoronaOfferCards';
 import { Box, Typography } from '@mui/material'
 import React,{FC} from 'react'
 
-import styles from '../../styles/offer.module.css';
+import styles from '../../styles/Offer.module.css';
 
 interface OfferData {
   fan:               string;

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../../styles/offer.module.css";
+import styles from "../../styles/Offer.module.css";
 export const ShoppingBag = () => {
   return (
     <svg

@@ -25,7 +25,7 @@ import {
 } from "@/components/register-login/forms";
 import { IdiomsAndPolitics } from "@/components/Footers/IdiomsAndPolitics";
 
-import styles from "../../styles/auth.module.css";
+import styles from "../../styles/Auth.module.css";
 import Head from "next/head";
 
 //form validation

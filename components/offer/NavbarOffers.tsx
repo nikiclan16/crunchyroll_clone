@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 
 import { CrunchyIcon } from "../../public/Icons/CrunchyIcon";
 
-import styles from "../../styles/offer.module.css";
+import styles from "../../styles/Offer.module.css";
 
 export const NavbarOffers = () => {
 
