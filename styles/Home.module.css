@@ -253,7 +253,7 @@
   
     /* navbar */
     .padding-crown {
-      padding:18.5px
+      padding:16px
     }
   
     .left-drawer {
@@ -292,6 +292,9 @@
     }
     .slider__img {
       max-width: 290px;
+      display: flex;
+      align-self: center;
+      justify-self: center;
     }
     /* fin slider */
   
