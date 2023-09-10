@@ -24,6 +24,7 @@ export const Password = ({password,onInputChange,passwordValid,formSubmitted}:Pa
 
   return (
     <Box style={{ width: "100%" }}>
+        <form>
           <FormControl fullWidth variant="standard" color="warning">
             <InputLabel error={!!passwordValid && formSubmitted} htmlFor="standard-adornment-password">
               Contraseña
@@ -49,6 +50,7 @@ export const Password = ({password,onInputChange,passwordValid,formSubmitted}:Pa
               }
             />
           </FormControl>
+        </form>
     </Box>
   )
 }

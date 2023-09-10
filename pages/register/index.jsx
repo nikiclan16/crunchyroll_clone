@@ -78,7 +78,6 @@ const RegisterPage = () => {
     setFormSubmitted(true);
 
     if (!isFormValid) return;
-
     dispatch(startCreatingUserWithEmailAndPassword(formState));
   };
 

@@ -25,8 +25,6 @@ export const registerUserWithEmailAndPassword = async ({
 
     const { uid, photoURL } = resp.user;
 
-    console.log(photoURL);
-
     return {
       ok: true,
       uid,

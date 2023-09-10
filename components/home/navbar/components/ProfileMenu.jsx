@@ -28,9 +28,12 @@ import { startUpdatePhotoURL } from "@/store/auth/thunks";
 
 import styles from "../../../../styles/Home.module.css";
 import Image from "next/image";
+import { Loader } from "@/components/Loader";
 
 export const ProfileMenu = () => {
-  const { displayName, photoURL } = useSelector((state) => state.auth);
+  const data = useSelector((state) => state.auth);
+  const displayName= data?.displayName ?? ''
+  const photoURL = data?.photoURL ?? ''
   const dispatch = useDispatch();
   const [background, setBackground] = React.useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -78,6 +81,8 @@ export const ProfileMenu = () => {
       cursor: "pointer",
     },
   }));
+
+  if (data.displayName === null || data.photoURL === null) return <Loader />;
 
   return (
     <>

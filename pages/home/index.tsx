@@ -31,7 +31,6 @@ const HomePage = () => {
     ? data.adds.demonslayer[1]
     : data.adds.demonslayer[2];
 
-
   if (status === "checking") return <Loader />;
 
   return (
