@@ -1,8 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 
-import Link from 'next/link';
 import { ExplorarMenu } from './ExplorarMenu';
 import { NoticiasMenu } from './NoticiasMenu';
 import { Manga } from './Manga';
@@ -12,7 +10,7 @@ export default function LeftNavbarMenu() {
 
   return (
     <React.Fragment>
-      <Box style={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
+      <Box style={{ display: 'flex', alignItems: 'center',justifyContent:'center'}}>
         
         <ExplorarMenu/>
 

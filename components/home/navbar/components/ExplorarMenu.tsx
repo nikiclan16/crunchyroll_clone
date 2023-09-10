@@ -1,8 +1,14 @@
+import React from 'react';
+
+import Link from 'next/link';
+
 import { Box, Tooltip, IconButton, Typography, Menu, MenuItem } from '@mui/material'
-import Link from 'next/link'
-import React from 'react'
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Divider from '@mui/material/Divider';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+
+import data from "../../../../mocks/HomeNavbar.json";
+
+import styles from "../../../../styles/Home.module.css";
 
 export const ExplorarMenu = () => {
 
@@ -21,10 +27,10 @@ export const ExplorarMenu = () => {
 
   return (
     <>
-        <Box onClick={handleClick} sx={{cursor:'pointer',display:'flex', alignItems:'center',padding:'15.5px',
-                backgroundColor:background ? '#000000' : '',
+        <Box onClick={handleClick} sx={{cursor:'pointer',display:'flex', alignItems:'center',padding:'13px',
+                backgroundColor:background ? '#141519' : '',
                 "&:hover": {
-                    backgroundColor: "#000000",
+                    backgroundColor: "#141519",
                   }, }}>
 
             <Tooltip title="">
@@ -42,7 +48,7 @@ export const ExplorarMenu = () => {
                 color:'#dadada',
                 cursor:'pointer',
                 "&:hover": {
-                    backgroundColor: "#000000",
+                    backgroundColor: "#141519",
                     color:'#ffffff'
                 },
             }}>
@@ -64,8 +70,7 @@ export const ExplorarMenu = () => {
             sx: {
               overflow: 'visible',
               borderRadius:'0px',
-              filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
-              bgcolor: '#000000',
+              bgcolor: '#141519',
               '& .MuiAvatar-root': {
                 width: 32,
                 height: 32,
@@ -77,150 +82,64 @@ export const ExplorarMenu = () => {
         transformOrigin={{ horizontal: 'left', vertical: 'top' }}
         anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }}
       >
-        <Box style={{display:'flex'}}>
-            <Box style={{backgroundColor:'#000000',margin:'30px'}}>
-                <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/popular' target="_blank" rel="noopener noreferrer">
-                    <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'10px',"&:hover": {backgroundColor: "#23252B"}}}>
-                        <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Popular</Typography>
-                    </MenuItem>
-                </Link>
-
-                <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/new' target="_blank" rel="noopener noreferrer">
-                    <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'10px',"&:hover": {backgroundColor: "#23252B"}}}>
-                        <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Novedades</Typography>
-                    </MenuItem>
-                </Link>
-
-                <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/alphabetical' target="_blank" rel="noopener noreferrer">
-                    <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'10px',"&:hover": {backgroundColor: "#23252B"}}}>
-                        <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Alfabético</Typography>
-                    </MenuItem>
-                </Link>
-
-                <Link className="no-decoration" href='https://www.crunchyroll.com/es/simulcasts/seasons/summer-2023' target="_blank" rel="noopener noreferrer">
-                    <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'10px',"&:hover": {backgroundColor: "#23252B"}}}>
-                        <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Temporada de simulcast</Typography>
-                    </MenuItem>
-                </Link>
-
-                <Link className="no-decoration" href='https://www.crunchyroll.com/es/simulcastcalendar' target="_blank" rel="noopener noreferrer">
-                    <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'10px',"&:hover": {backgroundColor: "#23252B"}}}>
-                        <Typography style={{color:'#ffffff',fontSize:'1rem',lineHeight:'18px'}}>Calendario de<br/>lanzamientos</Typography>
-                    </MenuItem>
-                </Link>
-
-                <Link className="no-decoration" href='https://www.crunchyroll.com/es/music' target="_blank" rel="noopener noreferrer">
-                    <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'10px',"&:hover": {backgroundColor: "#23252B"}}}>
-                        <Typography style={{color:'#ffffff',fontSize:'1rem',lineHeight:'18px'}}>Videos musicales y<br/>conciertos</Typography>
-                    </MenuItem>
-                </Link>
+        <Box style={{display:'flex',height:'340px',padding:'32px 20px'}}>
+            <Box>
+                {
+                    data.leftDrawer.map(data => (
+                        <Link key={data.text} className="no-decoration" href={data.url} target="_blank" rel="noopener noreferrer">
+                            <MenuItem onClick={handleClose} sx={{width:'200px',padding:'12px 20px',"&:hover": {backgroundColor: "#23252B"}}}>
+                                <Typography className={styles['navbar-menus-wrap']} style={{color:'#ffffff',fontSize:'.875rem',lineHeight:'1.125rem',maxWidth:'160px'}}>{data.text}</Typography>
+                            </MenuItem>
+                        </Link>
+                    ))
+                }
             </Box>
 
-            <Divider orientation="vertical" variant="middle" flexItem color='#23252B' style={{width:'1.5px'}} />
+            <Divider orientation="vertical" variant="middle" flexItem color='#23252B' style={{width:'1.5px',margin:'0 40px'}} />
 
-            <Box style={{backgroundColor:'#000000',margin:'30px'}}>
+            <Box>
                 
-                <MenuItem  onClick={handleClose} sx={{display:'flex',width:'200px',cursor:'default'}}>
-                    <Typography style={{color:'#A0A0A0',fontSize:'1rem'}}>GÉNEROS</Typography>
+                <MenuItem  onClick={handleClose} style={{width:'200px',padding:'12px 20px',cursor:'default'}}>
+                    <Typography style={{color:'#A0A0A0',fontSize:'.75rem',fontWeight:'600'}}>GÉNEROS</Typography>
                 </MenuItem>
                 
                 <Box style={{display:'flex'}}>
                     <Box>
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/action' target="_blank" rel="noopener noreferrer">
-                            <MenuItem sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Acción</Typography>
-                            </MenuItem>
-                        </Link>
-
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/adventure' target="_blank" rel="noopener noreferrer">
-                            <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Aventura</Typography>
-                            </MenuItem>
-                        </Link>
-
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/comedy' target="_blank" rel="noopener noreferrer">
-                            <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Comedia</Typography>
-                            </MenuItem>
-                        </Link>
-
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/drama' target="_blank" rel="noopener noreferrer">
-                            <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem',lineHeight:'18px'}}>Drama</Typography>
-                            </MenuItem>
-                        </Link>
-
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/fantasy' target="_blank" rel="noopener noreferrer">
-                            <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem',lineHeight:'18px'}}>Fantasia</Typography>
-                            </MenuItem>
-                        </Link>
+                        {
+                            data.genders1.map(data => (
+                                <Link key={data.text} className="no-decoration" href={data.url} target="_blank" rel="noopener noreferrer">
+                                    <MenuItem onClick={handleClose} sx={{width:'200px',padding:'12px 20px',"&:hover": {backgroundColor: "#23252B"}}}>
+                                        <Typography className={styles['navbar-menus-wrap']} style={{color:'#dadada',fontSize:'.875rem',lineHeight:'1.125rem',maxWidth:'160px'}}>{data.text}</Typography>
+                                    </MenuItem>
+                                </Link>
+                            ))
+                        }
                     </Box>
 
 
                     <Box>
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/music' target="_blank" rel="noopener noreferrer">
-                            <MenuItem sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Musical</Typography>
-                            </MenuItem>
-                        </Link>
-
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/romance' target="_blank" rel="noopener noreferrer">
-                            <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Romance</Typography>
-                            </MenuItem>
-                        </Link>
-
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/sci-fi' target="_blank" rel="noopener noreferrer">
-                            <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Ciencia Ficción</Typography>
-                            </MenuItem>
-                        </Link>
-
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/seinen' target="_blank" rel="noopener noreferrer">
-                            <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem',lineHeight:'18px'}}>Seinen</Typography>
-                            </MenuItem>
-                        </Link>
-
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/shojo' target="_blank" rel="noopener noreferrer">
-                            <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem',lineHeight:'18px'}}>Shoujo</Typography>
-                            </MenuItem>
-                        </Link>
+                        {
+                            data.genders2.map(data => (
+                                <Link key={data.text} className="no-decoration" href={data.url} target="_blank" rel="noopener noreferrer">
+                                    <MenuItem onClick={handleClose} sx={{width:'200px',padding:'12px 20px',"&:hover": {backgroundColor: "#23252B"}}}>
+                                        <Typography className={styles['navbar-menus-wrap']} style={{color:'#dadada',fontSize:'.875rem',lineHeight:'1.125rem',maxWidth:'160px'}}>{data.text}</Typography>
+                                    </MenuItem>
+                                </Link>
+                            ))
+                        }
                     </Box>
 
 
                     <Box>
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/shonen' target="_blank" rel="noopener noreferrer">
-                            <MenuItem sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Shounen</Typography>
-                            </MenuItem>
-                        </Link>
-
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/slice-of-life' target="_blank" rel="noopener noreferrer">
-                            <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Recuentos de la Vida</Typography>
-                            </MenuItem>
-                        </Link>
-
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/sports' target="_blank" rel="noopener noreferrer">
-                            <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem'}}>Deportes</Typography>
-                            </MenuItem>
-                        </Link>
-
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/supernatural' target="_blank" rel="noopener noreferrer">
-                            <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem',lineHeight:'18px'}}>Sobrenatural</Typography>
-                            </MenuItem>
-                        </Link>
-
-                        <Link className="no-decoration" href='https://www.crunchyroll.com/es/videos/thriller' target="_blank" rel="noopener noreferrer">
-                            <MenuItem onClick={handleClose} sx={{display:'flex',width:'200px',mb:'18px',"&:hover": {backgroundColor: "#23252B"}}}>
-                                <Typography style={{color:'#ffffff',fontSize:'1rem',lineHeight:'18px'}}>Thriller</Typography>
-                            </MenuItem>
-                        </Link>
+                        {
+                            data.genders3.map(data => (
+                                <Link key={data.text} className="no-decoration" href={data.url} target="_blank" rel="noopener noreferrer">
+                                    <MenuItem onClick={handleClose} sx={{width:'200px',padding:'12px',"&:hover": {backgroundColor: "#23252B"}}}>
+                                        <Typography className={styles['navbar-menus-wrap']} style={{color:'#dadada',fontSize:'.875rem',lineHeight:'1.125rem',maxWidth:'160px'}}>{data.text}</Typography>
+                                    </MenuItem>
+                                </Link>
+                            ))
+                        }
                     </Box>
                 </Box>
             </Box>

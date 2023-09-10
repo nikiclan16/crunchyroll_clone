@@ -5,9 +5,9 @@ export const SearchRightNavbar = () => {
   return (
     <Box sx={{
         cursor:'pointer',
-        padding:'17px',
+        padding:'13px',
         "&:hover": {
-            backgroundColor: "#000000",
+            backgroundColor: "#141519",
           },
         
         }}>

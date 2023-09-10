@@ -1,20 +1,21 @@
-import * as React from 'react';
+import { useState } from 'react';
+
 import Box from '@mui/material/Box';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+
 import { ProbarPremium } from '@/public/SVG/ProbarPremium';
 import { ButtonPruebaGratuitaYellow } from '@/public/Buttons/ButtonPruebaGratuitaYellow';
-import { SearchRightNavbar } from '@/public/Icons/SearchRightNavbar';
-import { ListRightNavbar } from '@/public/Icons/ListRightNavbar';
+import { SearchRightNavbar, ListRightNavbar } from '@/public/Icons';
 import { Acceder, CrearCuenta } from './RegisterOrLogin';
 
 
 export default function RightNavbarMenu() {
 
-  const [background, setBackground] = React.useState(false);
+  const [background, setBackground] = useState(false);
 
 
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
   
   const handleClick = (event) => {
@@ -28,7 +29,6 @@ export default function RightNavbarMenu() {
 
 
   return (
-    <React.Fragment>
       <Box style={{display: 'flex', alignItems: 'center', textAlign: 'center',color:'#dadada' }}>
 
         <ProbarPremium/>
@@ -37,10 +37,10 @@ export default function RightNavbarMenu() {
         
         <ListRightNavbar/>
         
-        <Box onClick={handleClick} sx={{cursor:'pointer',padding:'17px',
-            backgroundColor:background ? '#000000' : '',
+        <Box onClick={handleClick} sx={{cursor:'pointer',padding:'13px',
+            backgroundColor:background ? '#141519' : '',
             "&:hover": {
-                backgroundColor: "#000000",
+                backgroundColor: "#141519",
         }, }}>
           <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-user" width="28" height="28" viewBox="0 0 24 24" strokeWidth="1.8" stroke="#dadada" fill="none" strokeLinecap="round" strokeLinejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -58,8 +58,7 @@ export default function RightNavbarMenu() {
             sx: {
               overflow: 'visible',
               borderRadius:'0px',
-              filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
-              bgcolor: '#000000',
+              bgcolor: '#141519',
               '& .MuiAvatar-root': {
                 width: 32,
                 height: 32,
@@ -69,7 +68,7 @@ export default function RightNavbarMenu() {
           transformOrigin={{ horizontal: 'right', vertical: 'top' }}
           anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
         >
-          <Box style={{backgroundColor:'#000000'}}>
+          <Box style={{backgroundColor:'#141519'}}>
             <CrearCuenta/>
             <Acceder/>
             <MenuItem style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
@@ -78,6 +77,5 @@ export default function RightNavbarMenu() {
           </Box>
         </Menu>
       </Box>
-    </React.Fragment>
   );
 }

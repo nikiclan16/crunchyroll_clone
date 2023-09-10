@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/Offer.module.css";
+import styles from "../../styles/offer.module.css";
 export const  CardIcon = () => {
   return (
     <svg

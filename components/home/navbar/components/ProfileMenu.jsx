@@ -216,11 +216,11 @@ export const ProfileMenu = () => {
           cursor: "pointer",
           display: "flex",
           alignItems: "center",
-          padding: "10px",
+          padding: "7.5px",
           height: "100%",
-          backgroundColor: background ? "#000000" : "",
+          backgroundColor: background ? "#141519" : "",
           "&:hover": {
-            backgroundColor: "#000000",
+            backgroundColor: "#141519",
           },
         }}
       >
@@ -249,8 +249,7 @@ export const ProfileMenu = () => {
           sx: {
             overflow: "visible",
             borderRadius: "0px",
-            filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
-            backgroundColor: "#000000",
+            backgroundColor: "#141519",
             "& .MuiAvatar-root": {
               width: 32,
               height: 32,
@@ -262,7 +261,7 @@ export const ProfileMenu = () => {
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
       >
-        <Box style={{ backgroundColor: "#000000" }}>
+        <Box style={{ backgroundColor: "#141519" }}>
           <Box
             style={{ display: "flex", padding: "10px 20px", alignItems: "center" }}
           >

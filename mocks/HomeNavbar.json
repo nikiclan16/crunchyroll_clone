@@ -25,6 +25,72 @@
             "text": "Videos musicales y conciertos"
         }
     ],
+    "genders1": [
+        {
+          "url": "https://www.crunchyroll.com/es/videos/action",
+          "text": "Acción"
+        },
+        {
+          "url": "https://www.crunchyroll.com/es/videos/adventure",
+          "text": "Aventura"
+        },
+        {
+          "url": "https://www.crunchyroll.com/es/videos/comedy",
+          "text": "Comedia"
+        },
+        {
+          "url": "https://www.crunchyroll.com/es/videos/drama",
+          "text": "Drama"
+        },
+        {
+          "url": "https://www.crunchyroll.com/es/videos/fantasy",
+          "text": "Fantasía"
+        }
+      ],
+      "genders2": [
+        {
+          "url": "https://www.crunchyroll.com/es/videos/music",
+          "text": "Musical"
+        },
+        {
+          "url": "https://www.crunchyroll.com/es/videos/romance",
+          "text": "Romance"
+        },
+        {
+          "url": "https://www.crunchyroll.com/es/videos/sci-fi",
+          "text": "Ciencia Ficción"
+        },
+        {
+          "url": "https://www.crunchyroll.com/es/videos/seinen",
+          "text": "Seinen"
+        },
+        {
+          "url": "https://www.crunchyroll.com/es/videos/shojo",
+          "text": "Shoujo"
+        }
+      ],
+      "genders3": [
+        {
+          "url": "https://www.crunchyroll.com/es/videos/shonen",
+          "text": "Shounen"
+        },
+        {
+          "url": "https://www.crunchyroll.com/es/videos/slice-of-life",
+          "text": "Recuentos de la Vida"
+        },
+        {
+          "url": "https://www.crunchyroll.com/es/videos/sports",
+          "text": "Deportes"
+        },
+        {
+          "url": "https://www.crunchyroll.com/es/videos/supernatural",
+          "text": "Sobrenatural"
+        },
+        {
+          "url": "https://www.crunchyroll.com/es/videos/thriller",
+          "text": "Thriller"
+        }
+      ],
     "Avatars": {
         "Crunchyroll": [
             {

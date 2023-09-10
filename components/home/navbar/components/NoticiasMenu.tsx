@@ -18,10 +18,10 @@ export const NoticiasMenu = () => {
 
   return (
 <>
-    <Box onClick={handleClick} sx={{cursor:'pointer',display:'flex', alignItems:'center',padding:'15.5px',
-        backgroundColor:background ? '#000000' : '',
+    <Box onClick={handleClick} sx={{cursor:'pointer',display:'flex', alignItems:'center',padding:'13px',
+        backgroundColor:background ? '#141519' : '',
         "&:hover": {
-            backgroundColor: "#000000",
+            backgroundColor: "#141519",
           }, }}>
         <IconButton
           onClick={handleClick}
@@ -37,7 +37,7 @@ export const NoticiasMenu = () => {
                 color:'#dadada',
                 cursor:'pointer',
                 "&:hover": {
-                    backgroundColor: "#000000",
+                    backgroundColor: "#141519",
                     color:'#ffffff'
                 },
             }}>
@@ -58,8 +58,7 @@ export const NoticiasMenu = () => {
     sx: {
       overflow: 'visible',
       borderRadius:'0px',
-      filter: 'drop-shadow(0px 2px 8px rgba(0,0,0,0.32))',
-      bgcolor: '#000000',
+      bgcolor: '#141519',
       '& .MuiAvatar-root': {
         width: 32,
         height: 32,
@@ -71,28 +70,28 @@ export const NoticiasMenu = () => {
     transformOrigin={{ horizontal: 'left', vertical: 'top' }}
     anchorOrigin={{ horizontal: 'left', vertical: 'bottom' }}
     >
-        <Box style={{backgroundColor:'#000000'}}>
+        <Box style={{backgroundColor:'#141519'}}>
         <Link className="no-decoration" href='https://www.crunchyroll.com/es/news' target="_blank" rel="noopener noreferrer">
             <MenuItem onClick={handleClose} sx={{display:'flex',width:'300px',"&:hover": {backgroundColor: "#23252B"}}}>
-                <Typography style={{color:'#dadada',fontSize:'1rem'}}>Todas las noticias</Typography>
+                <Typography style={{color:'#f8f8f8',padding:'6px 10px',fontSize:'.875rem',lineHeight:'1.125rem',fontWeight:'500'}}>Todas las noticias</Typography>
             </MenuItem>
         </Link>
     
         <Link className="no-decoration" href='https://www.crunchyroll.com/es/animeawards/' target="_blank" rel="noopener noreferrer">
             <MenuItem onClick={handleClose} sx={{display:'flex',width:'300px',"&:hover": {backgroundColor: "#23252B"}}}>
-                <Typography style={{color:'#dadada',fontSize:'1rem'}}>Anime Awards</Typography>
+                <Typography style={{color:'#f8f8f8',padding:'6px 10px',fontSize:'.875rem',lineHeight:'1.125rem',fontWeight:'500'}}>Anime Awards</Typography>
             </MenuItem>
         </Link>
     
         <Link className="no-decoration" href='https://www.crunchyroll.com/es/events/' target="_blank" rel="noopener noreferrer">
             <MenuItem onClick={handleClose} sx={{display:'flex',width:'300px',"&:hover": {backgroundColor: "#23252B"}}}>
-                <Typography style={{color:'#dadada',fontSize:'1rem'}}>Crunchyroll Expo</Typography>
+                <Typography style={{color:'#f8f8f8',padding:'6px 10px',fontSize:'.875rem',lineHeight:'1.125rem',fontWeight:'500'}}>Crunchyroll Expo</Typography>
             </MenuItem>
         </Link>
     
         <Link className="no-decoration" href='https://tickets.demonslayer-movie.com/' target="_blank" rel="noopener noreferrer">
             <MenuItem onClick={handleClose} sx={{display:'flex',width:'300px',"&:hover": {backgroundColor: "#23252B"}}}>
-                <Typography style={{color:'#dadada',fontSize:'1rem'}}>Anime Movie Night</Typography>
+                <Typography style={{color:'#f8f8f8',padding:'6px 10px',fontSize:'.875rem',lineHeight:'1.125rem',fontWeight:'500'}}>Anime Movie Night</Typography>
             </MenuItem>
         </Link>
         </Box>

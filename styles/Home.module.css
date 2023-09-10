@@ -23,17 +23,18 @@
   .navbar {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-grow: 1; 
     z-index: 2;
     position: fixed;
     top:0; 
-  
   
     padding-left:20px;
     background-color: #23252B;
     color:#dadada;
     box-shadow: none;
     width: 100vw;
+    height: 60px;
   }
   
   .left-drawer {
@@ -41,6 +42,10 @@
     padding-top: 50px;
     background-color: #141519;
     height:100%
+  }
+
+  .navbar-menus-wrap {
+    white-space: wrap;
   }
   
   .container-father-modal {
@@ -98,7 +103,7 @@
   
   /* slider */
   .container-slider {
-    margin-top: 65px;
+    margin-top: 60px;
     width: 100vw;
     height: 600px;
     background-color:#F5821F;

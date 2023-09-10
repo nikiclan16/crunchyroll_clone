@@ -11,9 +11,9 @@ export const Juegos = () => {
             justifyContent: 'center',
             color:'#dadada',
             cursor:'pointer',
-            padding:'20.5px',
+            padding:'18px',
             "&:hover": {
-                backgroundColor: "#000000",
+                backgroundColor: "#141519",
                 color:'#ffffff'
               },
               }}>

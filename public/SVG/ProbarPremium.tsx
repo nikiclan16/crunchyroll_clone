@@ -11,9 +11,9 @@ export const ProbarPremium = () => {
 
   return (
     <>
-        <Box className={styles["padding-crown"]} onClick={() => push('/offer')}  sx={{cursor:'pointer',display:'flex', height:'100%',alignItems:'center',justifyContent:'center',padding:'10px',
+        <Box className={styles["padding-crown"]} onClick={() => push('/offer')}  sx={{cursor:'pointer',display:'flex', height:'100%',alignItems:'center',justifyContent:'center',padding:'7.5px',
             "&:hover": {
-                backgroundColor: "#000000",
+                backgroundColor: "#141519",
         },}}>
             <CrownRightNavbar/>        
             <Box className="display-none-567" style={{display:'flex',flexDirection:'column'}} >
