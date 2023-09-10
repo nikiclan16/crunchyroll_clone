@@ -82,6 +82,7 @@ export const ProfileMenu = () => {
     },
   }));
 
+  
   if (data.displayName === null || data.photoURL === null) return <Loader />;
 
   return (
